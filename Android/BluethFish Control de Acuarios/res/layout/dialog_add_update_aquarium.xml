@@ -1,0 +1,240 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout 
+        android:id="@+id/dialogRelative1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    
+	    <LinearLayout
+	        android:id="@+id/dialogLinearLayout1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"        
+	        android:layout_alignParentLeft="true"
+	        android:orientation="vertical" >
+	
+	        <TextView
+	            android:id="@+id/textViewDialogAquariumName"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="10dp"
+	            android:layout_marginLeft="10dp"
+	            android:layout_gravity="center"
+	            android:text="@string/dialog_add_aquarium_name" />
+	        <EditText
+	            android:id="@+id/editTextDialogAquariumName"
+	            android:inputType="text"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="10dp" >
+	        </EditText>
+	
+	        
+	        <TextView
+	            android:id="@+id/textViewDialogAquariumSize"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="30dp"
+	            android:layout_marginLeft="10dp"
+	            android:text="@string/dialog_add_aquarium_size" />    
+	        
+	        
+	
+	        <TextView
+	            android:id="@+id/textViewDialogAquariumHeight"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="15dp"
+	            android:layout_marginLeft="10dp"
+	            android:layout_gravity="center"
+	            android:text="@string/dialog_add_aquarium_height" />
+	        <EditText
+	            android:id="@+id/editTextDialogAquariumHeight"
+	            android:inputType="numberDecimal"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="10dp" >
+	        </EditText>        
+	        
+	        <TextView
+	            android:id="@+id/textViewDialogAquariumLength"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="5dp"
+	            android:layout_marginLeft="10dp"
+	            android:layout_gravity="center"
+	            android:text="@string/dialog_add_aquarium_length" />
+	        <EditText
+	            android:id="@+id/editTextDialogAquariumLength"
+	            android:inputType="numberDecimal"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="10dp" >
+	        </EditText> 
+	                
+	        <TextView
+	            android:id="@+id/textViewDialogAquariumWidth"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="5dp"
+	            android:layout_marginLeft="10dp"
+	            android:layout_gravity="center"
+	            android:text="@string/dialog_add_aquarium_width" />
+	        <EditText
+	            android:id="@+id/editTextDialogAquariumWidth"
+	            android:inputType="numberDecimal"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="10dp" >
+	        </EditText>         
+	        
+	        
+	    </LinearLayout>    
+	    
+	    <LinearLayout
+	        android:id="@+id/dialogLinearLayoutLight"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@id/dialogLinearLayout1"
+	        android:layout_centerHorizontal="true"        
+	        android:orientation="vertical" >
+	        
+	        <TextView
+	            android:id="@+id/textViewDialogAquariumLight"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="10dp"
+	            android:layout_marginLeft="10dp"
+	            android:layout_marginRight="10dp"            
+	            android:layout_gravity="center"
+	            android:text="@string/dialog_add_aquarium_light" />   
+	    </LinearLayout> 
+	    
+	    <LinearLayout
+	        android:id="@+id/dialogLinearLayoutLightPikers"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@id/dialogLinearLayout1"
+	        android:layout_below="@id/dialogLinearLayoutLight"
+	        android:layout_centerHorizontal="true"        
+	        android:orientation="horizontal" >
+	    
+		    <LinearLayout
+		        android:id="@+id/dialogLinearLayoutLightOn"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"         
+		        android:orientation="vertical" >      
+		        <TextView
+		            android:id="@+id/textViewDialogAquariumLightOn"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginTop="10dp"
+		            android:layout_marginLeft="5dp"
+		            android:layout_gravity="center"
+		            android:text="@string/dialog_add_aquarium_light_on" />
+		        <TimePicker
+		            android:id="@+id/timePickerDialogAquariumLightOn"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginTop="10dp"
+		            android:layout_gravity="center" />
+		    </LinearLayout>        
+		        
+		    <LinearLayout
+		        android:id="@+id/dialogLinearLayoutLightOff"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"  
+		        android:orientation="vertical" >
+		        <TextView
+		            android:id="@+id/textViewDialogAquariumLightOff"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginTop="10dp"
+		            android:layout_marginRight="5dp"
+		            android:layout_gravity="center"
+		            android:text="@string/dialog_add_aquarium_light_off" />
+		        <TimePicker
+		            android:id="@+id/timePickerDialogAquariumLightOff"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginTop="10dp"
+		            android:layout_gravity="center" />        
+		    </LinearLayout>
+		</LinearLayout>    
+	   
+	    
+	    
+	    <LinearLayout 
+	        android:id="@+id/dialogImage"
+	        android:layout_width="match_parent"
+	        android:layout_height="250dp"
+	        android:layout_below="@id/dialogLinearLayoutLightPikers"
+	        android:layout_toRightOf="@id/dialogLinearLayout1"
+	        android:orientation="vertical" >  
+	        <LinearLayout 
+		        android:id="@+id/dialogImageButtons"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_horizontal"
+		        android:orientation="horizontal" >
+		        <ImageButton
+		            android:id="@+id/imageButtonGallery"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginRight="20dp"
+	            	android:layout_marginLeft="30dp"
+		            android:src="@android:drawable/ic_menu_gallery" 
+		            android:contentDescription="@string/button_gallery_description"
+		            style="?android:attr/buttonStyle"/>	        	        
+		        <ImageButton
+		            android:id="@+id/imageButtonCamera"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginRight="30dp"
+	            	android:layout_marginLeft="20dp"
+		            android:src="@android:drawable/ic_menu_camera"
+		            android:contentDescription="@string/button_camera_description"
+		            style="?android:attr/buttonStyle" />
+		    </LinearLayout>     
+	        <ImageView
+	            android:id="@+id/dialogImageView"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/bluethfish_logo"
+	            android:contentDescription="@string/image_description" /> 
+	    </LinearLayout>
+	    
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialogRelative1"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/button_add_aquarium_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="@string/button_cancel"
+            style="?android:attr/buttonStyle" />
+        <Button
+            android:id="@+id/button_add_aquarium_accept"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="@string/button_accept"
+            style="?android:attr/buttonStyle" />     
+    </LinearLayout>
+
+</RelativeLayout>

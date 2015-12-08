@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#A9E2F3" >
+
+    <LinearLayout
+        android:id="@+id/plantCol1"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+        
+       <TextView
+	        android:id="@+id/textViewPlantScientificName"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="12dp"
+	        android:paddingRight="12dp"
+	        android:paddingTop="12dp"
+	        android:text="@string/plant_Scientific_Name" />
+       <TextView
+           android:id="@+id/textViewPlantScientificNameDetail"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:paddingLeft="12dp"
+           android:paddingRight="12dp"
+           android:textIsSelectable="false" />
+       
+	    <TextView
+	        android:id="@+id/textViewPlantCommonName"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="12dp"
+	        android:paddingRight="12dp"
+	        android:paddingTop="12dp"
+	        android:text="@string/plant_Common_Name" />
+       <TextView
+           android:id="@+id/textViewPlantCommonNameDetail"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:paddingLeft="12dp"
+           android:paddingRight="12dp"
+           android:textIsSelectable="false" />       
+       
+	    <TextView
+	        android:id="@+id/textViewPlantDescription"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="12dp"
+	        android:paddingRight="12dp"
+	        android:paddingTop="12dp"
+	        android:text="@string/plant_Description" />
+	    <ScrollView
+	        android:id="@+id/scrollViewPlantDescription"
+	        android:layout_width="match_parent"
+	        android:layout_height="150dp"
+	        android:fadeScrollbars="false" >
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+	            <TextView
+	                android:id="@+id/textViewPlantDescriptionDetail"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:paddingLeft="12dp"
+	                android:paddingRight="12dp"
+	                android:textIsSelectable="false" />
+	        </LinearLayout>
+	    </ScrollView>       
+       
+	   <TextView
+	        android:id="@+id/textViewPlantHabitat"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="12dp"
+	        android:paddingRight="12dp"
+	        android:paddingTop="12dp"
+	        android:text="@string/plant_Habitat" />
+	    <ScrollView
+	        android:id="@+id/scrollViewPlantHabitat"
+	        android:layout_width="match_parent"
+	        android:layout_height="100dp"
+	        android:fadeScrollbars="false" >
+	        <LinearLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+	            <TextView
+	                android:id="@+id/textViewPlantHabitatDetail"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:paddingLeft="12dp"
+	                android:paddingRight="12dp"
+	                android:textIsSelectable="false" />
+	        </LinearLayout>
+	    </ScrollView>
+	    
+	    <TextView
+	        android:id="@+id/textViewPlantMaintenance"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="12dp"
+	        android:paddingRight="12dp"
+	        android:paddingTop="12dp"
+	        android:text="@string/plant_Maintenance" />
+	    <ScrollView
+	        android:id="@+id/scrollViewPlantMaintenance"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:fadeScrollbars="false" >
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+	            <TextView
+	                android:id="@+id/textViewPlantMaintenanceDetail"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:paddingLeft="12dp"
+	                android:paddingRight="12dp" 
+	                android:paddingBottom="12dp"
+	                android:textIsSelectable="false"/>
+	        </LinearLayout>
+	    </ScrollView>
+	         
+    </LinearLayout>
+  
+    <LinearLayout
+        android:id="@+id/plantCol2"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/plantCol1"
+        android:orientation="vertical" >
+	    
+	    <TextView
+	        android:id="@+id/textViewPlantSubstratum"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="12dp"
+	        android:paddingRight="12dp"
+	        android:paddingTop="12dp"
+	        android:text="@string/plant_Substratum" />
+	    <ScrollView
+	        android:id="@+id/scrollViewPlantSubstratum"
+	        android:layout_width="match_parent"
+	        android:layout_height="125dp"
+	        android:fadeScrollbars="false" >
+	        <LinearLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >	
+	            <TextView
+	                android:id="@+id/textViewPlantSubstratumDetail"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:paddingLeft="12dp"
+	                android:paddingRight="12dp" 
+	                android:textIsSelectable="false"/>	
+	        </LinearLayout>
+	    </ScrollView>
+        
+	    <TextView
+	        android:id="@+id/textViewPlantAquariumPosition"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="12dp"
+	        android:paddingRight="12dp"
+	        android:paddingTop="12dp"
+	        android:text="@string/plant_Aquarium_Position" />  
+	    <ScrollView
+	        android:id="@+id/scrollViewPlantAquariumPosition"
+	        android:layout_width="match_parent"
+	        android:layout_height="100dp"
+	        android:fadeScrollbars="false" >	
+	        <LinearLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >	
+	            <TextView
+	                android:id="@+id/textViewPlantAquariumPositionDetail"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:paddingLeft="12dp"
+	                android:paddingRight="12dp" 
+	                android:textIsSelectable="false"/>	
+	        </LinearLayout>
+	    </ScrollView>
+	    
+
+	    <TextView
+	        android:id="@+id/textViewPlantReproduction"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="12dp"
+	        android:paddingRight="12dp"
+	        android:paddingTop="12dp"
+	        android:text="@string/plant_Reproduction" />	    
+	    <ScrollView
+	        android:id="@+id/scrollViewPlantReproduction"
+	        android:layout_width="match_parent"
+	        android:layout_height="125dp"
+	        android:fadeScrollbars="false" >	
+	        <LinearLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >	
+	            <TextView
+	                android:id="@+id/textViewPlantReproductionDetail"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:paddingLeft="12dp"
+	                android:paddingRight="12dp" 
+	                android:textIsSelectable="false"/>	
+	        </LinearLayout>
+	    </ScrollView>
+	    	    
+
+	    <TextView
+	        android:id="@+id/textViewPlantLight"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="12dp"
+	        android:paddingRight="12dp"
+	        android:paddingTop="12dp"
+	        android:text="@string/plant_Light" />    
+	    <ScrollView
+	        android:id="@+id/scrollViewPlantLight"
+	        android:layout_width="match_parent"
+	        android:layout_height="100dp"
+	        android:fadeScrollbars="false" >
+	        <LinearLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+	            <TextView
+	                android:id="@+id/textViewPlantLightDetail"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:paddingLeft="12dp"
+	                android:paddingRight="12dp" 
+	                android:textIsSelectable="false"/>
+	        </LinearLayout>
+	    </ScrollView>	    
+
+	    <TextView
+	        android:id="@+id/textViewPlantSize"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="12dp"
+	        android:paddingRight="12dp"
+	        android:paddingTop="12dp"
+	        android:text="@string/plant_Size" />
+	    <ScrollView
+	        android:id="@+id/scrollViewPlantSize"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:fadeScrollbars="false" >
+	        <LinearLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+	            <TextView
+	                android:id="@+id/textViewPlantSizeDetail"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:paddingLeft="12dp"
+	                android:paddingRight="12dp" 
+	                android:textIsSelectable="false"/>
+	        </LinearLayout>
+	    </ScrollView>	    
+	    
+    </LinearLayout>    
+    
+    <LinearLayout
+        android:id="@+id/plantImage"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/plantCol2"
+        android:orientation="vertical" >
+        	<ImageView 
+        	    android:id="@+id/imageViewPlant"
+        	    android:layout_width="match_parent"
+        	    android:layout_height="match_parent"
+        	    android:src="@drawable/bluethfish_logo"
+        	    android:contentDescription="@string/image_description"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/plantCol3"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/plantImage"
+        android:layout_toRightOf="@id/plantCol2"
+        android:orientation="vertical" >
+        	
+        <TextView
+            android:id="@+id/textViewPlantWater"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="12dp"
+            android:text="@string/plant_Water_Condition" />
+        <ScrollView
+	        android:id="@+id/scrollViewPlantWater"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:fadeScrollbars="false" >
+	        <LinearLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+	            <TextView
+	                android:id="@+id/textViewPlantWaterDetail"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:paddingLeft="12dp"
+	                android:paddingRight="12dp"
+	                android:textIsSelectable="false" />
+	        </LinearLayout>
+	    </ScrollView>
+	            
+        <RelativeLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+			<LinearLayout
+			    android:id="@+id/PlantGhmin"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+		       <TextView
+		            android:id="@+id/textViewPlantGhMin"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:paddingLeft="12dp"
+		            android:paddingRight="12dp"
+		            android:paddingTop="12dp"            
+		            android:text="@string/plant_Gh_Min" />
+				<TextView
+				    android:id="@+id/textViewPlantGhMinDetail"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:paddingLeft="12dp"
+				    android:paddingRight="12dp"
+				    android:textIsSelectable="false" />
+			</LinearLayout>	
+			<LinearLayout
+			    android:id="@+id/PlantGhmax"
+			    android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_toRightOf="@id/PlantGhmin"
+	            android:orientation="vertical"  >
+			    <TextView
+		       	    android:id="@+id/textViewPlantGhMax"
+		       	    android:layout_width="wrap_content"
+		       	    android:layout_height="wrap_content"
+		       	    android:paddingLeft="12dp"
+		       	    android:paddingRight="12dp"
+		            android:paddingTop="12dp"
+		       	    android:text="@string/plant_Gh_Max" />
+		        <TextView
+		            android:id="@+id/textViewPlantGhMaxDetail"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:paddingLeft="12dp"
+		            android:paddingRight="12dp"
+		            android:textIsSelectable="false" />    
+			</LinearLayout> 
+		</RelativeLayout>
+        
+        <RelativeLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+			<LinearLayout
+			    android:id="@+id/PlantPhmin"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+		       <TextView
+		            android:id="@+id/textViewPlantPhMin"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:paddingLeft="12dp"
+		            android:paddingRight="12dp"
+		            android:paddingTop="12dp"            
+		            android:text="@string/plant_Ph_Min" />
+				<TextView
+				    android:id="@+id/textViewPlantPhMinDetail"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:paddingLeft="12dp"
+				    android:paddingRight="12dp"
+				    android:textIsSelectable="false" />
+			</LinearLayout>
+			<LinearLayout
+			    android:id="@+id/PlantPhmax"
+			    android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_toRightOf="@id/PlantPhmin"
+	            android:orientation="vertical"  >
+			    <TextView
+		       	    android:id="@+id/textViewPlantPhMax"
+		       	    android:layout_width="wrap_content"
+		       	    android:layout_height="wrap_content"
+		       	    android:paddingLeft="12dp"
+		       	    android:paddingRight="12dp"
+		            android:paddingTop="12dp"
+		       	    android:text="@string/plant_Ph_Max" />
+		        <TextView
+		            android:id="@+id/textViewPlantPhMaxDetail"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:paddingLeft="12dp"
+		            android:paddingRight="12dp"
+		            android:textIsSelectable="false" />		    
+			</LinearLayout> 
+		</RelativeLayout>
+        
+        <RelativeLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+			<LinearLayout
+			    android:id="@+id/PlantCo2min"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+		       <TextView
+		            android:id="@+id/textViewPlantCo2Min"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:paddingLeft="12dp"
+		            android:paddingRight="12dp"
+		            android:paddingTop="12dp"            
+		            android:text="@string/plant_CO2_Min" />
+				<TextView
+				    android:id="@+id/textViewPlantCo2MinDetail"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:paddingLeft="12dp"
+				    android:paddingRight="12dp"
+				    android:textIsSelectable="false" />
+			</LinearLayout>
+			<LinearLayout
+			    android:id="@+id/PlantCo2max"
+			    android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_toRightOf="@id/PlantCo2min"
+	            android:orientation="vertical"  >
+			    <TextView
+		       	    android:id="@+id/textViewPlantCo2Max"
+		       	    android:layout_width="wrap_content"
+		       	    android:layout_height="wrap_content"
+		       	    android:paddingLeft="12dp"
+		       	    android:paddingRight="12dp"
+		            android:paddingTop="12dp"
+		       	    android:text="@string/plant_CO2_Max" />
+		        <TextView
+		            android:id="@+id/textViewPlantCo2MaxDetail"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:paddingLeft="12dp"
+		            android:paddingRight="12dp"
+		            android:textIsSelectable="false" />		    
+			</LinearLayout> 
+		</RelativeLayout>
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/plantCol4"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/plantImage"
+        android:layout_toRightOf="@id/plantCol3"
+        android:orientation="vertical" >
+        	
+        <TextView
+            android:id="@+id/textViewPlantTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="12dp"
+            android:text="@string/plant_Temp" />
+       <RelativeLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+			<LinearLayout
+			    android:id="@+id/PlantTmin"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+		       <TextView
+		            android:id="@+id/textViewPlantTempMin"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:paddingLeft="12dp"
+		            android:paddingRight="12dp"
+		            android:text="@string/plant_Temp_Min" />
+				<TextView
+				    android:id="@+id/textViewPlantTempMinDetail"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:paddingLeft="12dp"
+				    android:paddingRight="12dp"
+				    android:textIsSelectable="false" />
+			</LinearLayout>			
+			<LinearLayout
+			    android:id="@+id/PlantTmax"
+			    android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_toRightOf="@id/PlantTmin"
+	            android:orientation="vertical"  >
+			    <TextView
+		       	    android:id="@+id/textViewPlantTempMax"
+		       	    android:layout_width="wrap_content"
+		       	    android:layout_height="wrap_content"
+		       	    android:paddingLeft="12dp"
+		       	    android:paddingRight="12dp"
+		       	    android:text="@string/plant_Temp_Max" />
+		        <TextView
+		            android:id="@+id/textViewPlantTempMaxDetail"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:paddingLeft="12dp"
+		            android:paddingRight="12dp" 
+		            android:textIsSelectable="false"/>   
+			</LinearLayout> 
+	 </RelativeLayout>      
+            
+	<TextView
+	        android:id="@+id/textViewPlantComplexity"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="12dp"
+	        android:paddingRight="12dp"
+	        android:paddingTop="12dp"
+	        android:text="@string/plant_Complexity" />
+     <TextView
+	        android:id="@+id/textViewPlantComplexityDetail"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="12dp"
+	        android:paddingRight="12dp"
+	        android:textIsSelectable="false" />
+        
+    </LinearLayout>
+</RelativeLayout>

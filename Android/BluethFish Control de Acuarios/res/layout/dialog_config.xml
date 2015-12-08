@@ -1,0 +1,257 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/relativeConfig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+        
+        <RelativeLayout 
+            android:id="@+id/dialogConfigRelativeData"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content">
+
+	        <RelativeLayout
+	            	android:id="@+id/relativeConfigPh"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:orientation="vertical" >
+				<LinearLayout
+				    android:id="@+id/configPhMin"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:orientation="vertical" >
+			       <TextView
+			            android:id="@+id/textViewConfigPhMin"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:paddingLeft="12dp"
+			            android:paddingRight="12dp"
+			            android:paddingTop="5dp"            
+			            android:text="@string/dialog_config_ph_min" />
+					<TextView
+					    android:id="@+id/textViewConfigPhMinDetail"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:paddingLeft="12dp"
+					    android:paddingRight="12dp"
+					    android:textIsSelectable="false" />
+				</LinearLayout>
+				<LinearLayout
+				    android:id="@+id/configPhMax"
+				    android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_toRightOf="@id/configPhMin"
+		            android:orientation="vertical"  >
+				    <TextView
+			       	    android:id="@+id/textViewConfigPhMax"
+			       	    android:layout_width="wrap_content"
+			       	    android:layout_height="wrap_content"
+			       	    android:paddingLeft="12dp"
+			       	    android:paddingRight="12dp"
+			            android:paddingTop="5dp"
+			       	    android:text="@string/dialog_config_ph_max" />
+			        <TextView
+			            android:id="@+id/textViewConfigPhMaxDetail"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:paddingLeft="12dp"
+			            android:paddingRight="12dp"
+			            android:textIsSelectable="false" />		    
+				</LinearLayout> 
+			</RelativeLayout>
+			
+	        <TextView
+	            android:id="@+id/textViewConfigTemp"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:paddingLeft="12dp"
+	            android:paddingRight="12dp"
+	            android:paddingTop="12dp"
+	            android:layout_below="@id/relativeConfigPh"
+	            android:text="@string/dialog_config_temp" />
+	       <RelativeLayout
+	           		android:id="@+id/relativeConfigTemp"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_below="@id/textViewConfigTemp"
+		            android:orientation="vertical" >
+				<LinearLayout
+				    android:id="@+id/configTmin"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:orientation="vertical" >
+			       <TextView
+			            android:id="@+id/textViewConfigTempMin"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:paddingLeft="12dp"
+			            android:paddingRight="12dp"
+			            android:text="@string/dialog_config_temp_min" />
+					<TextView
+					    android:id="@+id/textViewConfigTempMinDetail"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:paddingLeft="12dp"
+					    android:paddingRight="12dp"
+					    android:textIsSelectable="false" />
+				</LinearLayout>			
+				<LinearLayout
+				    android:id="@+id/configTmax"
+				    android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_toRightOf="@id/configTmin"
+		            android:orientation="vertical"  >
+				    <TextView
+			       	    android:id="@+id/textViewConfigTempMax"
+			       	    android:layout_width="wrap_content"
+			       	    android:layout_height="wrap_content"
+			       	    android:paddingLeft="12dp"
+			       	    android:paddingRight="12dp"
+			       	    android:text="@string/dialog_config_temp_max" />
+			        <TextView
+			            android:id="@+id/textViewConfigTempMaxDetail"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:paddingLeft="12dp"
+			            android:paddingRight="12dp" 
+			            android:textIsSelectable="false"/>   
+				</LinearLayout> 
+		 </RelativeLayout>
+		 	
+	       <LinearLayout 
+	            android:id="@+id/linearLayoutdelay"
+	            android:layout_width="wrap_content"
+	       		android:layout_height="wrap_content"
+	        	android:layout_centerHorizontal="true"        
+	        	android:layout_alignParentLeft="true"
+	        	android:layout_below="@id/relativeConfigTemp"
+	        	android:orientation="vertical">
+		       <TextView 
+		           android:id="@+id/textViewdelay"
+		           android:layout_width="wrap_content"
+		           android:layout_height="wrap_content"
+		           android:paddingLeft="12dp"
+				   android:paddingRight="12dp" 
+				   android:text="@string/dialog_config_delay" />
+		       <EditText 
+		           android:id="@+id/editTextdelay"
+		           android:inputType="number"
+		           android:layout_width="match_parent"
+		           android:layout_height="wrap_content"
+		           android:paddingLeft="12dp"
+				   android:paddingRight="12dp" />
+	       </LinearLayout>
+	       
+		</RelativeLayout>
+       	 
+       
+       <RelativeLayout 
+           android:id="@+id/dialogConfigRelativeLight"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_toRightOf="@id/dialogConfigRelativeData">
+	       <LinearLayout
+		        android:id="@+id/dialogConfigLinearLayoutLight"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_centerHorizontal="true"        
+		        android:orientation="vertical" >
+		        
+		        <TextView
+		            android:id="@+id/textViewDialogConfigLight"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginTop="10dp"
+		            android:layout_marginLeft="10dp"
+		            android:layout_marginRight="10dp"            
+		            android:layout_gravity="center"
+		            android:text="@string/dialog_config_light" />   
+		    </LinearLayout> 
+		    
+		    <LinearLayout
+		        android:id="@+id/dialogConfigLinearLayoutLightPikers"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        
+		        android:layout_below="@id/dialogConfigLinearLayoutLight"
+		        android:layout_centerHorizontal="true"        
+		        android:orientation="horizontal" >
+		    
+			    <LinearLayout
+			        android:id="@+id/dialogConfigLinearLayoutLightOn"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"         
+			        android:orientation="vertical" >      
+			        <TextView
+			            android:id="@+id/textViewDialogConfigAquariumLightOn"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_marginTop="10dp"
+			            android:layout_marginLeft="5dp"
+			            android:layout_gravity="center"
+			            android:text="@string/dialog_config_light_on" />
+			        <TimePicker
+			            android:id="@+id/timePickerDialogConfigLightOn"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_marginTop="10dp"
+			            android:layout_gravity="center" />
+			    </LinearLayout>        
+			        
+			    <LinearLayout
+			        android:id="@+id/dialogConfigLinearLayoutLightOff"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"  
+			        android:orientation="vertical" >
+			        <TextView
+			            android:id="@+id/textViewDialogConfigLightOff"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_marginTop="10dp"
+			            android:layout_marginRight="5dp"
+			            android:layout_gravity="center"
+			            android:text="@string/dialog_config_light_off" />
+			        <TimePicker
+			            android:id="@+id/timePickerDialogConfigLightOff"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_marginTop="10dp"
+			            android:layout_gravity="center" />        
+			    </LinearLayout>
+			</LinearLayout>
+		</RelativeLayout>
+       
+       
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonsConfig"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeConfig"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/button_config_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="@string/button_cancel"
+            style="?android:attr/buttonStyle" />
+        <Button
+            android:id="@+id/button_config_accept"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="@string/button_accept"
+            style="?android:attr/buttonStyle" />     
+    </LinearLayout>
+</RelativeLayout>

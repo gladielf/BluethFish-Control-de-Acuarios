@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#A9E2F3">
+  
+    <LinearLayout
+        android:id="@+id/fishCol1"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+	    <TextView
+	        android:id="@+id/textViewScientificName"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="12dp"
+	        android:paddingRight="12dp"
+	        android:paddingTop="12dp"
+	        android:text="@string/fish_Scientific_Name" />
+       <TextView
+           android:id="@+id/textViewScientificNameDetail"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:paddingLeft="12dp"
+           android:paddingRight="12dp"
+           android:textIsSelectable="false" />
+	
+
+	    <TextView
+	        android:id="@+id/textViewCommonName"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="12dp"
+	        android:paddingRight="12dp"
+	        android:paddingTop="12dp"
+	        android:text="@string/fish_Common_Name" />
+        <TextView
+            android:id="@+id/textViewCommonNameDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:textIsSelectable="false" />
+
+	
+	    <TextView
+	        android:id="@+id/textViewDescription"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="12dp"
+	        android:paddingRight="12dp"
+	        android:paddingTop="12dp"
+	        android:text="@string/fish_Description" />
+	    <ScrollView
+	        android:id="@+id/scrollViewDescription"
+	        android:layout_width="match_parent"
+	        android:layout_height="175dp"
+	        android:fadeScrollbars="false" >
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+	            <TextView
+	                android:id="@+id/textViewDescriptionDetail"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:paddingLeft="12dp"
+	                android:paddingRight="12dp"
+	                android:textIsSelectable="false" />
+	        </LinearLayout>
+	    </ScrollView>
+	
+	    <TextView
+	        android:id="@+id/textViewSize"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="12dp"
+	        android:paddingRight="12dp"
+	        android:paddingTop="12dp"
+	        android:text="@string/fish_Size" />
+	    <ScrollView
+	        android:id="@+id/scrollViewSize"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:fadeScrollbars="false" >
+	        <LinearLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+	            <TextView
+	                android:id="@+id/textViewSizeDetail"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:paddingLeft="12dp"
+	                android:paddingRight="12dp" 
+	                android:textIsSelectable="false"/>
+	        </LinearLayout>
+	    </ScrollView>
+	    
+	    <TextView
+	        android:id="@+id/textViewHabitat"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="12dp"
+	        android:paddingRight="12dp"
+	        android:paddingTop="12dp"
+	        android:text="@string/fish_Habitat" />
+	    <ScrollView
+	        android:id="@+id/scrollViewHabitat"
+	        android:layout_width="match_parent"
+	        android:layout_height="70dp"
+	        android:fadeScrollbars="false" >
+	        <LinearLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+	            <TextView
+	                android:id="@+id/textViewHabitatDetail"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:paddingLeft="12dp"
+	                android:paddingRight="12dp"
+	                android:textIsSelectable="false" />
+	        </LinearLayout>
+	    </ScrollView>
+	    
+	    <TextView
+	        android:id="@+id/textViewMaintenance"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="12dp"
+	        android:paddingRight="12dp"
+	        android:paddingTop="12dp"
+	        android:text="@string/fish_Maintenance" />
+	    <ScrollView
+	        android:id="@+id/scrollViewMaintenance"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:fadeScrollbars="false" >
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+	            <TextView
+	                android:id="@+id/textViewMaintenanceDetail"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:paddingLeft="12dp"
+	                android:paddingRight="12dp" 
+	                android:paddingBottom="12dp"
+	                android:textIsSelectable="false"/>
+	        </LinearLayout>
+	    </ScrollView>
+	    
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fishCol2"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"        
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/fishCol1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textViewFood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="12dp"
+            android:text="@string/fish_Food" />
+        <ScrollView
+	        android:id="@+id/scrollViewFood"
+	        android:layout_width="match_parent"
+	        android:layout_height="100dp"
+	        android:fadeScrollbars="false" >
+	        <LinearLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+	            <TextView
+	                android:id="@+id/textViewFoodDetail"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:paddingLeft="12dp"
+	                android:paddingRight="12dp"
+	                android:textIsSelectable="false" />
+	        </LinearLayout>
+	    </ScrollView>
+    
+    	<TextView
+            android:id="@+id/textViewAquSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="12dp"
+            android:text="@string/fish_Aquarium_Size" />
+        <ScrollView
+	        android:id="@+id/scrollViewAquSize"
+	        android:layout_width="250dp"
+	        android:layout_height="70dp"
+	        android:fadeScrollbars="false" >
+	        <LinearLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+	            <TextView
+	                android:id="@+id/textViewAquSizeDetail"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:paddingLeft="12dp"
+	                android:paddingRight="12dp"
+	                android:textIsSelectable="false" />
+	        </LinearLayout>
+	    </ScrollView>
+	    		
+        <TextView
+	        android:id="@+id/textViewGenderDifference"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="12dp"
+	        android:paddingRight="12dp"
+	        android:paddingTop="12dp"
+	        android:text="@string/fish_Gender_Difference" />
+	    <ScrollView
+	        android:id="@+id/scrollViewGenderDifference"
+	        android:layout_width="match_parent"
+	        android:layout_height="100dp"
+	        android:fadeScrollbars="false" >
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+	            <TextView
+	                android:id="@+id/textViewGenderDifferenceDetail"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:paddingLeft="12dp"
+	                android:paddingRight="12dp" 
+	                android:textIsSelectable="false"/>
+	        </LinearLayout>
+	    </ScrollView>
+        
+        <TextView
+	        android:id="@+id/textViewReproduction"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="12dp"
+	        android:paddingRight="12dp"
+	        android:paddingTop="12dp"
+	        android:text="@string/fish_Reproduction" />
+	    <ScrollView
+	        android:id="@+id/scrollViewReproduction"
+	        android:layout_width="match_parent"
+	        android:layout_height="120dp"
+	        android:fadeScrollbars="false" >
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+	            <TextView
+	                android:id="@+id/textViewReproductionDetail"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:paddingLeft="12dp"
+	                android:paddingRight="12dp" 
+	                android:textIsSelectable="false"/>
+	        </LinearLayout>
+	    </ScrollView>
+	    
+	    <TextView
+	        android:id="@+id/textViewAssociation"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="12dp"
+	        android:paddingRight="12dp"
+	        android:paddingTop="12dp"
+	        android:text="@string/fish_Association" />
+	    <ScrollView
+	        android:id="@+id/scrollViewassociation"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:fadeScrollbars="false" >
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+	            <TextView
+	                android:id="@+id/textViewAssociationDetail"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:paddingLeft="12dp"
+	                android:paddingRight="12dp"
+	                android:paddingBottom="12dp"
+	                android:textIsSelectable="false" />
+	        </LinearLayout>
+	    </ScrollView>
+	    	       
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fishimage"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/fishCol2"
+        android:orientation="vertical" >  
+		    <ImageView
+		        android:id="@+id/imageViewFish"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:src="@drawable/bluethfish_logo"
+		        android:contentDescription="@string/image_description" />
+		</LinearLayout>
+		    
+    
+    <LinearLayout
+        android:id="@+id/fishCol3"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/fishimage"
+        android:layout_toRightOf="@id/fishCol2"
+        android:orientation="vertical" >
+        
+		<TextView
+            android:id="@+id/textViewWater"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="12dp"
+            android:text="@string/fish_Water_Condition" />
+        <ScrollView
+	        android:id="@+id/scrollViewWater"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:fadeScrollbars="false" >
+	        <LinearLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+	            <TextView
+	                android:id="@+id/textViewWaterDetail"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:paddingLeft="12dp"
+	                android:paddingRight="12dp"
+	                android:textIsSelectable="false" />
+	        </LinearLayout>
+	    </ScrollView>
+	            
+        <RelativeLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+			<LinearLayout
+			    android:id="@+id/Ghmin"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+		       <TextView
+		            android:id="@+id/textViewGhMin"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:paddingLeft="12dp"
+		            android:paddingRight="12dp"
+		            android:paddingTop="12dp"            
+		            android:text="@string/fish_Gh_Min" />
+				<TextView
+				    android:id="@+id/textViewGhMinDetail"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:paddingLeft="12dp"
+				    android:paddingRight="12dp"
+				    android:textIsSelectable="false" />
+			</LinearLayout>	
+			<LinearLayout
+			    android:id="@+id/Ghmax"
+			    android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_toRightOf="@id/Ghmin"
+	            android:orientation="vertical"  >
+			    <TextView
+		       	    android:id="@+id/textViewGhMax"
+		       	    android:layout_width="wrap_content"
+		       	    android:layout_height="wrap_content"
+		       	    android:paddingLeft="12dp"
+		       	    android:paddingRight="12dp"
+		            android:paddingTop="12dp"
+		       	    android:text="@string/fish_Gh_Max" />
+		        <TextView
+		            android:id="@+id/textViewGhMaxDetail"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:paddingLeft="12dp"
+		            android:paddingRight="12dp"
+		            android:textIsSelectable="false" />    
+			</LinearLayout> 
+		</RelativeLayout>
+
+        <RelativeLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+			<LinearLayout
+			    android:id="@+id/Phmin"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+		       <TextView
+		            android:id="@+id/textViewPhMin"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:paddingLeft="12dp"
+		            android:paddingRight="12dp"
+		            android:paddingTop="12dp"            
+		            android:text="@string/fish_Ph_Min" />
+				<TextView
+				    android:id="@+id/textViewPhMinDetail"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:paddingLeft="12dp"
+				    android:paddingRight="12dp"
+				    android:textIsSelectable="false" />
+			</LinearLayout>
+			<LinearLayout
+			    android:id="@+id/Phmax"
+			    android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_toRightOf="@id/Phmin"
+	            android:orientation="vertical"  >
+			    <TextView
+		       	    android:id="@+id/textViewPhMax"
+		       	    android:layout_width="wrap_content"
+		       	    android:layout_height="wrap_content"
+		       	    android:paddingLeft="12dp"
+		       	    android:paddingRight="12dp"
+		            android:paddingTop="12dp"
+		       	    android:text="@string/fish_Ph_Max" />
+		        <TextView
+		            android:id="@+id/textViewPhMaxDetail"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:paddingLeft="12dp"
+		            android:paddingRight="12dp"
+		            android:textIsSelectable="false" />		    
+			</LinearLayout> 
+		</RelativeLayout>        
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/fishCol4"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/fishimage"
+        android:layout_toRightOf="@id/fishCol3"
+        android:orientation="vertical" >
+        
+       <TextView
+            android:id="@+id/textViewTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="12dp"
+            android:text="@string/fish_Temp" />
+       <RelativeLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+			<LinearLayout
+			    android:id="@+id/Tmin"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+		       <TextView
+		            android:id="@+id/textViewTempMin"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:paddingLeft="12dp"
+		            android:paddingRight="12dp"
+		            android:text="@string/fish_Temp_Min" />
+				<TextView
+				    android:id="@+id/textViewTempMinDetail"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:paddingLeft="12dp"
+				    android:paddingRight="12dp"
+				    android:textIsSelectable="false" />
+			</LinearLayout>			
+			<LinearLayout
+			    android:id="@+id/Tmax"
+			    android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_toRightOf="@id/Tmin"
+	            android:orientation="vertical"  >
+			    <TextView
+		       	    android:id="@+id/textViewTempMax"
+		       	    android:layout_width="wrap_content"
+		       	    android:layout_height="wrap_content"
+		       	    android:paddingLeft="12dp"
+		       	    android:paddingRight="12dp"
+		       	    android:text="@string/fish_Temp_Max" />
+		        <TextView
+		            android:id="@+id/textViewTempMaxDetail"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:paddingLeft="12dp"
+		            android:paddingRight="12dp" 
+		            android:textIsSelectable="false"/>   
+			</LinearLayout> 
+	 </RelativeLayout>         
+            
+	<TextView
+	        android:id="@+id/textViewComplexity"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="12dp"
+	        android:paddingRight="12dp"
+	        android:paddingTop="12dp"
+	        android:text="@string/fish_Complexity" />
+     <TextView
+	        android:id="@+id/textViewComplexityDetail"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="12dp"
+	        android:paddingRight="12dp"
+	        android:textIsSelectable="false" />
+
+	</LinearLayout>   
+</RelativeLayout>

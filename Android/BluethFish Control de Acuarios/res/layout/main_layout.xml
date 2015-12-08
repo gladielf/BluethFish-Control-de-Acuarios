@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent" 
+    android:orientation="horizontal"
+    android:background="#A9E2F3" >
+
+  <Button
+      android:id="@+id/buttonAquarium"
+      android:layout_width="wrap_content"
+      android:layout_height="400dp"
+      android:layout_weight="1"
+      android:layout_gravity="center_vertical"
+      android:gravity="bottom|center"
+      android:background="@drawable/bluethfish_aquarium"
+      android:text="@string/button_aquarium"
+      style="?android:attr/borderlessButtonStyle" />
+      
+  <Button 
+      android:id="@+id/buttonPlant"
+      android:layout_width="wrap_content"
+      android:layout_height="400dp"
+      android:layout_weight="1"
+      android:layout_gravity="center_vertical"
+      android:gravity="bottom|center"
+      android:background="@drawable/bluethfish_plant"
+      android:text="@string/button_plant"
+      style="?android:attr/borderlessButtonStyle"/>
+
+  <Button
+      android:id="@+id/buttonFish"
+      android:layout_width="wrap_content"
+      android:layout_height="400dp"
+      android:layout_weight="1"
+      android:layout_gravity="center_vertical"
+      android:gravity="bottom|center"
+      android:background="@drawable/bluethfish_fish"
+      android:text="@string/button_fish"
+      style="?android:attr/borderlessButtonStyle" />
+
+</LinearLayout>

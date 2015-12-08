@@ -1,0 +1,4 @@
+<resources>
+    <item type="layout" name="activity_fish_list">@layout/activity_fish_twopane</item>
+    <item type="layout" name="activity_plant_list">@layout/activity_plant_twopane</item>
+</resources>

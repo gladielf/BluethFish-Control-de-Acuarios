@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout 
+        android:id="@+id/dialogUpdateList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+	    <ListView
+	        android:id="@+id/listViewUpdate"
+	        android:layout_width="250dp"
+	        android:layout_height="300dp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginLeft="5dp"
+	        android:layout_marginTop="5dp"
+	        android:layout_marginRight="5dp" >
+	    </ListView>
+	
+	    <LinearLayout
+	        android:id="@+id/linearLayoutUpdateNumber"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_toRightOf="@id/listViewUpdate"
+	        android:layout_marginLeft="15dp"
+	        android:orientation="vertical" >
+       
+		    <TextView
+		        android:id="@+id/textViewNewNumber"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" />	    
+		    
+		    <NumberPicker
+		        android:id="@+id/numberPickerNewNumber"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center" />
+	    </LinearLayout>
+	
+	</RelativeLayout>    
+    
+    <LinearLayout
+        android:id="@+id/buttonsUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialogUpdateList"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/button_update_list_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="@string/button_cancel"
+            style="?android:attr/buttonStyle" />
+        <Button
+            android:id="@+id/button_update_list_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="@string/button_update"
+            style="?android:attr/buttonStyle" />     
+    </LinearLayout>
+
+</RelativeLayout>

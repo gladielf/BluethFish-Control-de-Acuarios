@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#A9E2F3" >
+    <RelativeLayout
+        android:id="@+id/RelativeLayoutSensors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+        <LinearLayout 
+            android:id="@+id/LinearActualTemp"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true" 
+	        android:layout_marginLeft="10dp"
+	        android:orientation="vertical">
+	    <TextView
+	        android:id="@+id/textViewActualTemp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:text="@string/actual_temp" />
+	
+	    <TextView
+	        android:id="@+id/textViewActualTempDetail"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"/>
+	    </LinearLayout>
+	    
+        <LinearLayout 
+            android:id="@+id/LinearActualPh"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true" 
+	        android:layout_toRightOf="@id/LinearActualTemp"
+	        android:layout_marginLeft="20dp"
+	        android:orientation="vertical">
+	    <TextView
+	        android:id="@+id/textViewActualPh"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/actual_ph" />
+	
+	    <TextView
+	        android:id="@+id/textViewActualPhDetail"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"/>	
+	    </LinearLayout>
+	    
+        
+	    <Button
+	        android:id="@+id/buttonsAqAssociate"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_toLeftOf="@+id/buttonCongif"
+	        android:text="@string/button_associate" />
+	    
+	    <Button
+	        android:id="@+id/buttonCongif"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_alignParentRight="true"
+	        android:text="@string/button_config" />
+	    
+	    <Button
+	        android:id="@+id/buttonGraphic"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/buttonCongif"
+	        android:layout_alignParentRight="true"
+	        android:text="@string/button_graphic" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/RelativeLayoutSensors" >
+	    
+        <com.androidplot.xy.XYPlot
+            android:id="@+id/pot" 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            androidPlot.graphWidget.marginTop="20dp"
+            androidPlot.graphWidget.marginLeft="15dp" 
+            androidPlot.graphWidget.marginBottom="25dp"
+            androidPlot.graphWidget.marginRight="10dp"
+            androidPlot.graphWidget.rangeLabelPaint.textSize="15dp"
+            androidPlot.graphWidget.rangeOriginLabelPaint.textSize="15dp"
+            androidPlot.graphWidget.domainLabelPaint.textSize="15dp"
+            androidPlot.graphWidget.domainOriginLabelPaint.textSize="15dp"
+            androidPlot.legendWidget.textPaint.textSize="15dp"
+            androidPlot.legendWidget.iconSizeMetrics.heightMetric.value="15dp"
+            androidPlot.legendWidget.iconSizeMetrics.widthMetric.value="15dp"
+            androidPlot.legendWidget.heightMetric.value="25dp"
+            androidPlot.legendWidget.positionMetrics.anchor="right_bottom"
+            />
+            
+    </RelativeLayout>
+    
+</RelativeLayout>

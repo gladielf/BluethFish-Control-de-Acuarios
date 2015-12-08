@@ -1,0 +1,179 @@
+<resources>
+
+    <string name="app_name">BluethFish</string>
+    <string name="title_item_detail">Detalles de la lista</string>
+    <string name="title_item_list">Lista</string>
+    <string name="image_description">Imagen</string>
+    
+    <string name="button_camera_description">Icono para abrir la camara</string>
+    <string name="button_gallery_description">Icono para abrir la galeria</string>
+    
+    <string name="button_aquarium">Mis acuarios</string>
+    <string name="button_plant">Biblioteca de Plantas</string>
+    <string name="button_fish">Biblioteca de Peces</string>
+    
+    <string name="button_add_aquarium">Añadir acuario nuevo</string>
+    <string name="button_add_fish">Añadir pez</string>
+    <string name="button_update_fish">Modificar pez</string>
+    <string name="button_remove_fish">Eliminar pez</string>
+    <string name="button_add_plant">Añadir planta</string>
+    <string name="button_update_plant">Modificar planta</string>
+    <string name="button_remove_plant">Eliminar planta</string>
+    <string name="button_calculate_params">Calcular parametros del acuario</string>
+    <string name="button_sensor">Sensores</string>
+    <string name="button_accept">Aceptar</string>
+    <string name="button_cancel">Cancelar</string>
+    <string name="button_add">Añadir</string>
+    <string name="button_update">Modificar</string>
+    <string name="button_remove_all">Eliminar todos</string>
+    <string name="button_remove_element">Eliminar</string>
+    
+    <string name="actual_temp">Temperatura Actual:</string>
+    <string name="actual_ph">Ph Actual:</string>
+    <string name="button_config">Configurar Sensores</string>
+    <string name="button_graphic">Crear Gráfica</string>
+    <string name="button_associate">Asociar Sensores</string>
+    <string name="dialog_title_config">Configuración de los sensores</string>
+    <string name="dialog_title_wrong_aquarium">Acuario NO asociado </string>
+    <string name="dialog_message_wrong_aquarium">Este acuario no esta asociado a los sensores, si desea asociarlo pulse el botón Asociar Sensores</string>
+    <string name="dialog_title_aquarium_associated">Acuario ya asociado</string>
+    <string name="dialog_message_aquarium_associated">Este acuario ya esta asociado a los sensores.</string>
+    <string name="dialog_title_confirm_aquarium_associate">Confirmación de asociación</string>
+    <string name="dialog_message_confirm_aquarium_associate">¿Seguro que desea asociar este acuario a los sensores?</string>
+    <string name="dialog_title_graphics">Crear Graficas</string>
+    <string name="dialog_graphics_no_file_selected">No se ha seleccionado ningún archivo</string>
+    <string name="dialog_message_reminder_config">Ahora que el acuario esta asociado debe configurarlo pulsando el botón Configurar Sensores</string>
+    <string name="dialog_config_temp">Temperatura</string>
+	<string name="dialog_config_temp_min">Min</string>
+	<string name="dialog_config_temp_max">Max</string>
+	<string name="dialog_config_ph_min">Ph. Min</string>
+	<string name="dialog_config_ph_max">Ph. Max</string>
+	<string name="dialog_config_light">Horas de luz</string>	
+	<string name="dialog_config_light_on">Hora encendido</string>
+	<string name="dialog_config_light_off">Hora apagado</string>
+	<string name="dialog_config_delay">Tiempo de muestro (segs)</string>
+	<string name="dialog_config_empty_file">El campo "Tiempo de muestro (segs)" esta vacio</string>
+	<string name="dialog_config_empty_data">No se han calculado los parametros del acuario</string>
+	
+    
+    
+    <string name="menu_settings">Opciones</string>
+    <string name="menu_about">Acerca de</string>
+    
+    <string name="action_bar_fish_library_order">Biblioteca de peces</string>
+    <string name="action_bar_fish_library_family">Familias petenecientes al orden:</string>
+    <string name="action_bar_fish_library_fish">Peces petenecientes a la familia:</string>
+    <string name="action_bar_fish_library_fish_detail">Información del pez</string>
+    
+    <string name="action_bar_plant_library_order">Biblioteca de plantas</string>
+    <string name="action_bar_plant_library_family">Familias petenecientes al orden:</string>
+    <string name="action_bar_plant_library_plant">Plantas petenecientes a la familia:</string>
+    <string name="action_bar_plant_library_plant_detail">Información de la planta</string>
+    
+    <string name="action_bar_aquarium">Mis acuarios</string>
+    <string name="action_bar_aquarium_sensors">Sensores</string>
+    
+    <string name="dialog_message_about">Aplicación BluethFish: control de acuarios para Android creada por Fermín Conejo Baltasar como PFC</string>
+    <string name="dialog_title_about">Acerca de</string>
+    
+    <string name="dialog_title_add_aquarium">Añadir acuario</string>
+    <string name="dialog_add_aquarium_name">Nombre del acuario</string>
+	<string name="dialog_add_aquarium_size">Dimensiones del acuario</string>
+	<string name="dialog_add_aquarium_height">Alto (cm)</string>
+	<string name="dialog_add_aquarium_length">Largo (cm)</string>
+	<string name="dialog_add_aquarium_width">Ancho (cm)</string> 
+	<string name="dialog_add_aquarium_light">Horas de luz</string>	
+	<string name="dialog_add_aquarium_light_on">Hora encendido</string>
+	<string name="dialog_add_aquarium_light_off">Hora apagado</string>
+	<string name="dialog_add_aquarium_empty_fields">Uno de los campos esta vacío</string>
+	<string name="dialog_add_aquarium_empty_picture">No se ha selecionado foto para el acuario</string>
+	
+	<string name="dialog_title_aquarium_options">Seleccione la opción deseada</string>
+	<string name="dialog_title_update_aquarium">Modificar acuario</string>
+	<string name="dialog_title_remove_aquarium">Eliminar acuario</string>
+	<string name="dialog_remove_aquarium">¿Seguro que desea eliminar el acuario llamado</string>
+ 
+	<string name="dialog_title_add_fish">Añadir pez al acuario</string>
+	<string name="dialog_title_update_fish_list">Modificar pez del acuario</string>
+	<string name="dialog_title_remove_fish_list">Eliminar peces del acuario</string>
+	<string name="dialog_fish_new_number">Nº ejemplares modificados:</string>
+	<string name="dialog_fish_number">Nº ejemplares:</string>
+	<string name="dialog_fish_no_selected">No se ha seleccionado ningún pez</string>
+	<string name="dialog_remove_fish">¿Seguro que desea eliminar de la lista el pez llamado</string>
+	<string name="dialog_remove_all_fish">¿Seguro que desea eliminar todos los peces del acuario llamado</string>
+	
+	<string name="dialog_title_add_plant">Añadir planta al acuario</string>
+	<string name="dialog_title_update_plant_list">Modificar planta del acuario</string>
+	<string name="dialog_title_remove_plant_list">Eliminar planta del acuario</string>
+	<string name="dialog_plant_new_number">Nº tallos modificados:</string>
+	<string name="dialog_plant_number">Nº de tallos:</string>
+	<string name="dialog_plant_no_selected">No se ha seleccionado ninguna planta</string>
+	<string name="dialog_remove_plant">¿Seguro que desea eliminar de la lista la planta llamado</string>
+	<string name="dialog_remove_all_plant">¿Seguro que desea eliminar todas las plantas del acuario llamado</string>
+	
+	
+	
+    <string name="fish_Scientific_Name">NOMBRE CIENTIFICO</string>
+    <string name="fish_Common_Name">NOMBRE COMÚN</string>
+    <string name="fish_Description">DESCRIPCIÓN</string>
+    <string name="fish_Size">TAMAÑO</string>
+    <string name="fish_Food">ALIMENTACIÓN</string>
+    <string name="fish_Habitat">HABITAT</string>
+    <string name="fish_Temp">TEMPERATURA</string>
+    <string name="fish_Temp_Min">MIN</string>
+    <string name="fish_Temp_Max">MAX</string>
+    <string name="fish_Aquarium_Size">TAMAÑO ACUARIO</string>
+    <string name="fish_Water_Condition">CONDICIÓN DEL AGUA</string>
+    <string name="fish_Gh_Min">GH. MIN</string>
+    <string name="fish_Gh_Max">GH. MAX</string>    
+    <string name="fish_Ph_Min">PH. MIN</string>
+    <string name="fish_Ph_Max">PH. MAX</string>
+    <string name="fish_Maintenance">MANTENIMIENTO</string>
+    <string name="fish_Gender_Difference">DIFERENCIA DE SEXOS</string>
+    <string name="fish_Association">ASOCIACIÓN</string>
+	<string name="fish_Reproduction">REPRODUCCIÓN</string>
+	<string name="fish_Complexity">COMPLEJIDAD</string>
+	
+	
+	<string name="plant_Scientific_Name">NOMBRE CIENTIFICO</string>
+	<string name="plant_Common_Name">NOMBRE COMÚN</string>
+	<string name="plant_Description">DESCRIPCIÓN</string>
+	<string name="plant_Habitat">HABITAT</string>
+	<string name="plant_Size">TAMAÑO</string>
+	<string name="plant_Light">REQUISITOS DE LUZ</string>
+	<string name="plant_Aquarium_Position">POSICION EN EL ACUARIO</string>
+	<string name="plant_Reproduction">REPRODUCCIÓN</string>
+	<string name="plant_Maintenance">MANTENIMIENTO</string>
+	<string name="plant_Substratum">SUBSTRATO</string>
+	<string name="plant_Water_Condition">CONDICIÓN DEL AGUA</string>
+	<string name="plant_Gh_Min">GH. MIN</string>
+	<string name="plant_Gh_Max">GH. MAX</string>
+	<string name="plant_Ph_Min">PH. MIN</string>
+	<string name="plant_Ph_Max">PH. MAX</string>
+	<string name="plant_CO2_Min">CO2. MIN</string>
+	<string name="plant_CO2_Max">CO2. MAX</string>
+	<string name="plant_Temp">TEMPERATURA</string>
+	<string name="plant_Temp_Min">MIN</string>
+	<string name="plant_Temp_Max">MAX</string>
+	<string name="plant_Complexity">COMPLEJIDAD</string>	
+            
+	<string name="aquarium_name">NOMBRE DEL ACUARIO</string>
+	<string name="aquarium_size">DIMENSIONES DEL ACUARIO</string>
+	<string name="aquarium_height">ALTO (cm)</string>
+	<string name="aquarium_length">LARGO (cm)</string>
+	<string name="aquarium_width">ANCHO (cm)</string>
+	<string name="aquarium_liters">LITROS</string>
+	<string name="aquarium_parameters">PARAMETROS DEL ACUARIO</string>
+	<string name="aquarium_temp">TEMPERATURA</string>
+	<string name="aquarium_temp_min">MIN</string>
+	<string name="aquarium_temp_max">MAX</string>
+	<string name="aquarium_ph_min">PH. MIN</string>
+	<string name="aquarium_ph_max">PH. MAX</string>
+	<string name="aquarium_light_on">HORA ENCENDIDO</string>
+	<string name="aquarium_light_off">HORA APAGADO</string>
+	<string name="aquarium_fish_list">LISTADO DE PECES DEL ACUARIO</string>
+	<string name="aquarium_plant_list">LISTADO DE PLANTAS DEL ACUARIO</string>
+	<string name="aquarium_no_fish_no_plant">No hay ni peces ni plantas en el acuario</string>
+	
+
+</resources>

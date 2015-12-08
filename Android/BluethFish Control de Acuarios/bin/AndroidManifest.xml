@@ -1,0 +1,118 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pfc.bluethfish.control.acuarios"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+    
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:allowBackup="True" >
+        <activity
+            android:name="com.pfc.bluethfish.control.acuarios.MainActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+
+        <activity
+            android:name="com.pfc.bluethfish.control.acuarios.library.fish.FishOrderActivity"
+            android:label="@string/action_bar_fish_library_order"
+            android:screenOrientation="landscape" >
+
+        </activity>    
+        <activity   
+            android:name="com.pfc.bluethfish.control.acuarios.library.fish.FishFamilyActivity"
+            android:label="@string/action_bar_fish_library_family"
+            android:screenOrientation="landscape" >
+
+        </activity>
+        
+        <activity
+            android:name="com.pfc.bluethfish.control.acuarios.library.fish.FishListActivity"
+            android:label="@string/title_item_list"
+            android:screenOrientation="landscape">
+            <meta-data
+           		android:name="android.support.PARENT_ACTIVITY"
+            	android:value="com.pfc.gestion.acuarios.library.fish.FishFamilyActivity" />
+
+        </activity>
+        
+        <activity
+            android:name="com.pfc.bluethfish.control.acuarios.library.fish.FishDetailActivity"
+            android:label="@string/title_item_detail" 
+            android:screenOrientation="landscape" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pfc.gestion.acuarios.library.fish.FishListActivity" />
+        </activity>
+        
+        
+        <activity 
+            android:name="com.pfc.bluethfish.control.acuarios.library.plant.PlantOrderActivity"
+            android:label="@string/action_bar_plant_library_order"
+            android:screenOrientation="landscape"
+            >
+            
+        </activity>
+        <activity   
+            android:name="com.pfc.bluethfish.control.acuarios.library.plant.PlantFamilyActivity"
+            android:label="@string/action_bar_plant_library_family"
+            android:screenOrientation="landscape" >
+
+        </activity>
+        
+        <activity
+            android:name="com.pfc.bluethfish.control.acuarios.library.plant.PlantListActivity"
+            android:label="@string/title_item_list"
+            android:screenOrientation="landscape">
+            <meta-data
+           		android:name="android.support.PARENT_ACTIVITY"
+            	android:value="com.pfc.gestion.acuarios.library.plant.PlantFamilyActivity" />
+
+        </activity>
+        
+        <activity
+            android:name="com.pfc.bluethfish.control.acuarios.library.plant.PlantDetailActivity"
+            android:label="@string/title_item_detail" 
+            android:screenOrientation="landscape" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pfc.gestion.acuarios.library.plant.PlantListActivity" />
+        </activity>        
+        
+        
+        <activity 
+            android:name="com.pfc.bluethfish.control.acuarios.aquarium.AquariumsActivity"
+            android:label="@string/action_bar_aquarium"
+            android:screenOrientation="landscape" >
+        </activity>
+        
+        <activity 
+            android:name="com.pfc.bluethfish.control.acuarios.aquarium.AquariumDetailActivity"
+            android:label="@string/action_bar_aquarium"
+            android:screenOrientation="landscape" >
+        </activity>
+        
+        <activity 
+            android:name="com.pfc.bluethfish.control.acuarios.aquarium.AquariumSensorDetailActivity"
+            android:label="@string/action_bar_aquarium_sensors"
+            android:screenOrientation="landscape" >
+        </activity>
+        
+        <service android:name="com.pfc.bluethfish.control.acuarios.data.DatabaseAdapter"></service>
+    </application>
+
+</manifest>

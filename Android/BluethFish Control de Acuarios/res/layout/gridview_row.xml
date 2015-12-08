@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/gridViewImage"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/image_description"
+        android:src="@drawable/bluethfish_logo" />
+
+    <TextView
+        android:id="@+id/gridViewText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/gridViewImage"
+        android:layout_below="@+id/gridViewImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp" />
+
+</RelativeLayout>
